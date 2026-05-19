@@ -66,4 +66,5 @@ Feature Engineering > Model Complexity: Proper feature selection and correlation
 ML vs DL Trade-offs for Tabular Data: While custom MLPs can achieve competitive accuracy, tree-based models (XGBoost, Random Forest) generally offer faster inference, better out-of-the-box performance, and higher interpretability for structured network flow data.
 Pipeline Hygiene is Crucial: Fitting scalers and applying SMOTE strictly on the training split is mandatory. Applying them before splitting causes severe data leakage and inflated validation scores.
 Domain-Specific Evaluation Matters: Understanding and implementing cybersecurity metrics (FAR/AMR) transforms a generic classification project into a practical security tool. A model with 99% accuracy but a high AMR is dangerous in production.
-## 📝 Note: This project is designed for educational and research purposes. Always validate IDS models against modern, up-to-date threat landscapes and real network traffic before production deployment.
+
+📝 Note: This project is designed for educational and research purposes. Always validate IDS models against modern, up-to-date threat landscapes and real network traffic before production deployment.
