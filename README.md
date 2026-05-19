@@ -54,17 +54,17 @@ Update the file paths in Section 1: Data Preparation to match your local directo
 Open cicids2017-deep-learning.ipynb in Jupyter Lab, VS Code, or Kaggle.
 Run all cells sequentially from top to bottom. GPU acceleration is recommended for the Deep Learning training sections.
 All outputs (metrics, plots, evaluations) will render inline.
-🔮 Future Development & Extensions
-🎛️ Hyperparameter Tuning: Integrate Optuna or scikit-learn's RandomizedSearchCV for automated architecture and parameter optimization.
-🌊 Sequence Modeling: Upgrade to LSTM/GRU or Transformer architectures to capture temporal dependencies in network traffic flows.
-⏱️ Time-Series Splitting: Replace random train_test_split with chronological/time-based splits to better simulate real-world deployment and prevent temporal data leakage.
-🚀 Production Deployment: Wrap the best-performing model in a FastAPI or Streamlit microservice for real-time packet/flow analysis.
-🛡️ Adversarial Testing: Evaluate model resilience against adversarial network traffic evasion techniques.
+- 🔮 Future Development & Extensions
+- 🎛️ Hyperparameter Tuning: Integrate Optuna or scikit-learn's RandomizedSearchCV for automated architecture and parameter optimization.
+- 🌊 Sequence Modeling: Upgrade to LSTM/GRU or Transformer architectures to capture temporal dependencies in network traffic flows.
+- ⏱️ Time-Series Splitting: Replace random train_test_split with chronological/time-based splits to better simulate real-world deployment and prevent temporal data leakage.
+- 🚀 Production Deployment: Wrap the best-performing model in a FastAPI or Streamlit microservice for real-time packet/flow analysis.
+- 🛡️ Adversarial Testing: Evaluate model resilience against adversarial network traffic evasion techniques.
 ## 💡 What I Learned
-Accuracy is Deceptive in Security: High overall accuracy often masks poor minority-class performance. Metrics like F1-Score, FAR, and AMR are essential for evaluating real-world security effectiveness.
-Feature Engineering > Model Complexity: Proper feature selection and correlation filtering significantly reduced training time, mitigated overfitting, and often outperformed blindly adding more neural network layers.
-ML vs DL Trade-offs for Tabular Data: While custom MLPs can achieve competitive accuracy, tree-based models (XGBoost, Random Forest) generally offer faster inference, better out-of-the-box performance, and higher interpretability for structured network flow data.
-Pipeline Hygiene is Crucial: Fitting scalers and applying SMOTE strictly on the training split is mandatory. Applying them before splitting causes severe data leakage and inflated validation scores.
-Domain-Specific Evaluation Matters: Understanding and implementing cybersecurity metrics (FAR/AMR) transforms a generic classification project into a practical security tool. A model with 99% accuracy but a high AMR is dangerous in production.
+- Accuracy is Deceptive in Security: High overall accuracy often masks poor minority-class performance. Metrics like F1-Score, FAR, and AMR are essential for evaluating real-world security effectiveness.
+- Feature Engineering > Model Complexity: Proper feature selection and correlation filtering significantly reduced training time, mitigated overfitting, and often outperformed blindly adding more neural network layers.
+- ML vs DL Trade-offs for Tabular Data: While custom MLPs can achieve competitive accuracy, tree-based models (XGBoost, Random Forest) generally offer faster inference, better out-of-the-box performance, and higher interpretability for structured network flow data.
+- Pipeline Hygiene is Crucial: Fitting scalers and applying SMOTE strictly on the training split is mandatory. Applying them before splitting causes severe data leakage and inflated validation scores.
+- Domain-Specific Evaluation Matters: Understanding and implementing cybersecurity metrics (FAR/AMR) transforms a generic classification project into a practical security tool. A model with 99% accuracy but a high AMR is dangerous in production.
 
 📝 Note: This project is designed for educational and research purposes. Always validate IDS models against modern, up-to-date threat landscapes and real network traffic before production deployment.
